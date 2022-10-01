@@ -3,5 +3,9 @@
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+    for element in items:
+        if element in frequencies.keys():
+            frequencies[element] += 1
+        else:
+            frequencies[element] = 1    
     return frequencies
