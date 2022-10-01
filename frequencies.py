@@ -4,8 +4,9 @@
 def frequencies(items):
     frequencies = {}
     for element in items:
-        if str(element).strip() in frequencies.keys():
-            frequencies[str(element).strip()] += 1
+        string_element = str(element).strip()
+        if string_element in frequencies.keys():
+            frequencies[string_element] += 1
         else:
-            frequencies[str(element).strip()] = 1    
+            frequencies[string_element] = 1    
     return frequencies
